@@ -47,5 +47,11 @@ window.onclick = function(event) {
   }
 }
 checkBtn.addEventListener("click", check);
-clearBtn.addEventListener("click", clear)
+clearBtn.addEventListener("click", clear);
+
+userInput.addEventListener("keypress", function(event) {
+  if (event.key === 'Enter') {
+    check()
+  }
+});
 
