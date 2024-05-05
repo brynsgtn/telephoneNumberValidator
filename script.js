@@ -1,7 +1,12 @@
+// Scripts 
+
 const checkBtn = document.getElementById("check-btn");
 const userInput = document.getElementById("user-input");
 const clearBtn = document.getElementById("clear-btn");
 const resultsDiv = document.getElementById("results-div");
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("modal-btn");
+const span = document.getElementsByClassName("close")[0];
 
 
 const check = () => {
@@ -28,7 +33,19 @@ const clear = () => {
   userInput.value = "";
 }
 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 checkBtn.addEventListener("click", check);
 clearBtn.addEventListener("click", clear)
 

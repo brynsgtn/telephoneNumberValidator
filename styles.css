@@ -7,7 +7,6 @@
     font-optical-sizing: auto;
   }
 
-
 .container {
   display: flex;
   justify-content: center;
@@ -24,11 +23,6 @@
   height: 40vh;
   width: 100%;
   padding: 30px;
-}
-@media only screen and (min-width: 600px) {
-  .content {
-    height: 40vh;
-  }
 }
 
 .input-container {
@@ -95,12 +89,28 @@ input {
   color: white;
   font-size: 1rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
-.help {
-  margin-top: 15px;
+.check-btn:hover {
+  background-color: #346478;
+}
+
+.check-btn:active {
+  transform: translateY(2px);
+}
+
+.format-btn {
+  margin-top: 10px;
   background: none;
   border: none;
+  color: #346478;
+  text-decoration: underline;
+  transition: transform 0.3s ease-in-out;
+}
+
+.format-btn:hover {
+  transform: translateY(-3px);
 }
 
 .result-header {
@@ -112,3 +122,53 @@ input {
   font-size: 2rem;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 50% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style:circle;
+  margin-left: 120px;
+}
+
+li {
+  margin: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
