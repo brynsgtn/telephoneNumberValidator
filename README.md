@@ -4,9 +4,9 @@ This project is part of the FreeCodeCamp certification and serves as a US phone 
 
 ## Screenshots
 
-![Screenshot 1](Screenshot1.png)
-![Screenshot 2](Screenshot2.png)
-![Screenshot 3](Screenshot3.png)
+![Screenshot 1](./assets/Screenshot1.png)
+![Screenshot 2](./assets/Screenshot2.png)
+![Screenshot 3](./assets/Screenshot3.png)
 
 ## Overview
 
@@ -22,6 +22,7 @@ The US Phone Number Validator App allows users to input a phone number and valid
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 
 ## How to Use
 
@@ -32,7 +33,7 @@ The US Phone Number Validator App allows users to input a phone number and valid
 
 ## Deployment
 
-This app is deployed using Netlify. You can access it [here](#).
+This app is deployed using Netlify. You can access it [here](https://us-number-validator.netlify.app/).
 
 Open the `index.html` file in your preferred web browser to view the app locally.
 
